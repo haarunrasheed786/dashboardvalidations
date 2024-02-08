@@ -1,0 +1,36 @@
+
+<app-dashboard></app-dashboard>
+
+
+
+<div>
+  <input type="text" placeholder="Search">
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Mobile Number</th>
+        <th>Email Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of user">
+        <td>{{ user.Name}}</td>
+        <td> {{ user.MobileNumber }}</td>
+        <td> {{ user.EmailAddress }}</td>
+      </tr>
+    </tbody>
+    <br>
+    <br>
+    <div class="buttons" >
+      <button>Add Bulk</button>
+      <button>Add New</button>
+      <button>Update</button>
+      <button>Delete</button>
+    </div>
+  </table>
+</div>
+
+
+
